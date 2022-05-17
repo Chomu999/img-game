@@ -325,9 +325,6 @@ ISButtonEvent(btn6,touch[2],pEndRight)
 ISButtonEvent(btn8,touch[2],pEndDown)
 ISButtonEvent(btn4,touch[2],pEndLeft)
 
-
-
-
 //btn up fun
 function pStartUp(){
 hero.frameX=0
@@ -392,8 +389,6 @@ const gameLoop=()=>{
 ctx.clearRect(0,0,cvs.width,cvs.height)
 
 
-
-
 DrawSpite(player.img,
 player.frameX*player.Width,0,
 player.Width,player.Height,
@@ -455,11 +450,6 @@ if(IScollision(hero,box)){
 sorce++
 boxs.splice(index, 1)
 }})
-
-
-
-
-
 
 
 
