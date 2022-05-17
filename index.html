@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="description" content="web game for mobile">
 <title>HTML CANVAS GAME BOI</title>
 <style>
 *{
@@ -123,6 +123,10 @@ return Math.floor(Math.random() * (max-min) + min)
 
 
 
+function texts(text,x=90,y=78){
+ctx.fillStyle='#919191';
+ctx.fillText(`${text}`,x,y);
+}
 
 function DrawSpite(img,sX,sY,sW,sH,dX,dY,dW,dH){
 ctx.drawImage(img,sX,sY,sW,sH,dX,dY,dW,dH)
@@ -455,7 +459,7 @@ boxs.splice(index, 1)
 
 hero.update()
 
-
+texts(`sorce : ${sorce}`,140,30)
 }
 cvs.onload =setInterval(gameLoop,1000/10)
 console.log(ss[0].speed.x)
